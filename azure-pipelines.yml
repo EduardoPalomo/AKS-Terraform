@@ -21,4 +21,10 @@ steps:
     command: 'plan'
     environmentServiceName: 'Azure subscription 1(8da163f2-70b0-460b-b17a-b18166cd99a4)'
     allowTelemetryCollection: false
-
+    
+- task: TerraformCLI@0
+  displayName: Terraform apply
+  inputs:
+    command: 'apply'
+    environmentServiceName: 'Azure subscription 1(8da163f2-70b0-460b-b17a-b18166cd99a4)'
+    allowTelemetryCollection: false
