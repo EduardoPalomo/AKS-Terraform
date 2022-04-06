@@ -5,7 +5,7 @@
 
 trigger: none
 
-pool: Default
+pool: ubuntu-latest
   
 
 steps:
