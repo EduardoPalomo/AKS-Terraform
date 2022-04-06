@@ -16,17 +16,9 @@ steps:
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
-  displayName: Terraform Plan
+  displayName: Terraform Init
   inputs:
     command: 'plan'
-    environmentServiceName: 'youtube-app-service-connection'
+    environmentServiceName: 'Azure subscription 1(8da163f2-70b0-460b-b17a-b18166cd99a4)'
     allowTelemetryCollection: false
-
-- task: TerraformCLI@0
-  displayName: Terraform Apply
-  inputs:
-    command: 'apply'
-    environmentServiceName: 'youtube-app-service-connection'
-    allowTelemetryCollection: true
-
 
